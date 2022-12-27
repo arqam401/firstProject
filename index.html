@@ -8,20 +8,38 @@
   </head>
 
   <body>
+    <h1 id="title">Survy Form For Microvers</h1>
+    <p id="description">Thank you for taking the time to share your experience with us.</p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">name</label> <br>
+        <input type="text" id="name" placeholder="Enter your name here" required> <br>
+        <label for="email" id="email-label">email</label> <br>
+        <input type="email" id="email" placeholder="enter your email here" required> <br>
+        <label for="number" id="number-label">age</label> <br>
+        <input type="number" id="number" placeholder="enter your age here in numbers" min="13" max="101"> <br>
+        <label for="dropdown">Select your shift</label> <br>
+        <select name="dropdown" id="dropdown">
+            <option value="morning">morning shift</option>
+            <option value="evening">evening shift</option>
+        </select> <br>
+        <label for="radio">Select your gender</label> <br>
+        <input type="radio" name="gender" value="binary" id="binary">
+        <label for="binary">binary</label>
+        <input type="radio" name="gender" value="non-binary" id="non-binary">
+        <label for="non-binary">non-binary</label> <br>
+
+        <label for="checkboxes">select your hobbies</label> <br>
+        <input type="checkbox" value="football" id="football"><label for="football">football</label>
+        <input type="checkbox" value="cricket" id="cricket"><label for="cricket">cricket</label> <br>
+
+        <label for="textarea">aditional comments</label> <br>
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea> <br>
+
+        <button id="submit">submit</button>
+
+    </form>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
     <script  src="js/index.js"></script>
   </body>
 </html>
