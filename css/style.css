@@ -59,4 +59,29 @@
   #survey-form #submit:hover {
     background-color: blue;
   }
+
+  @media screen and (max-width: 600px) {
+    #survey-form {
+      width: 90%;
+    }
+  
+    #survey-form label {
+      font-size: 1em;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #survey-form label {
+      display: inline-block;
+      width: 30%;
+    }
+  
+    #survey-form input[type="text"],
+    #survey-form input[type="email"],
+    #survey-form input[type="number"],
+    #survey-form select,
+    #survey-form textarea {
+      width: 70%;
+    }
+  }
+  
   
